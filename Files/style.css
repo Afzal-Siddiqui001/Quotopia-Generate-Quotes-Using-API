@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', 'sans-serif';
+}
+/* .material-icons{
+    font-family: 'Material Symbols Outlined';
+} */
+body{
+    background: #ffa0a8;
+    width: 100%;
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.nav img{
+    height: 53px;
+    margin-top: 13px;
+    margin-left: 23px;
+}
+/* .nav .contact{
+    position: sticky;
+    margin-top: 21px;
+    background-color: #d4d4d4;
+    font-size: 25px;
+    padding: 9px;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+} */
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.greeting{
+    margin-top: 2%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    line-height: 1.7;
+}
+.greeting p{
+    text-align: center;
+    width: 395px;
+}
+.feelings{
+    margin-top: 2%;
+    max-width: 500px;
+}
+.cards{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f0f0f0;
+    flex-wrap: wrap;
+    gap: 17px;
+    padding: 37px;
+    border-radius: 8px;
+}
+.card{
+    position: relative;
+    width: 127px;
+    background: #fff;
+    padding: 8px;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+.card img{
+    width: 100%;
+    display: block;
+    margin: auto;
+}
+.name{
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+    border-radius: 8px;
+    opacity: 0;
+    transition: 600ms;
+}
+.name:hover{
+    opacity: 1;
+}
+.name h3{
+    font-weight: 500;
+    text-shadow: rgba(0, 0, 0, 1) 0 5px 15px;
+    transform: translateY(25px);
+    transition: transform 600ms;
+}
+.name:hover h3{
+    transform: translateY(0);
+    transition: transform 600ms;
+}
+
+
+
+
+
+footer{
+    margin-top: 5%;
+    background: #111;
+}
+.footer{
+    width: 100%;
+    padding: 70px 30px 20px;
+}
+.socialIcons{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.socialIcons a{
+    text-decoration: none;
+    padding: 10px;
+    background: white;
+    margin: 10px;
+    border-radius: 50%;
+}
+.socialIcons a i{
+    font-size: 2em;
+    color: black;
+    opacity: 0.9;
+}
+.socialIcons a:hover{
+    background: #7a7a7a;
+    transition: 200ms;
+}
+.socialIcons a:hover i{
+    color: white;
+    transition: 200ms;
+}
+.footerNav{
+    margin: 30px 0;
+}
+.footerNav ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    list-style: none;
+}
+.footerNav ul li{
+    color: rgb(204, 204, 204);
+    margin: 8px;
+    text-decoration: none;
+    font-size: 1em;
+    opacity: 1;
+    transition: 500ms;
+}
+.footerNav ul li span{
+    cursor: pointer;
+}
+.footerNav ul li span:hover{
+    opacity: 1;
+    color: white;
+}
+.credit{
+    background-color: black;
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+.developer{
+    opacity: 0.7;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 400;
+    margin: 0px 5px;
+}
